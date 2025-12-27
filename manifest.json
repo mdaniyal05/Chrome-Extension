@@ -2,10 +2,14 @@
   "manifest_version": 3,
   "name": "YouTube Segment Looper",
   "version": "1.0",
+  "action": {
+    "default_popup": "./src/popup/popup.html",
+    "default_icon": "./src/images/loop.png"
+  },
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
-      "js": ["./src/script.js"]
+      "js": ["./src/scripts/content.js"]
     }
   ]
 }
